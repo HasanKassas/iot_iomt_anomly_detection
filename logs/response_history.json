@@ -1,0 +1,48 @@
+[
+  {
+    "action": "block",
+    "ip": "192.168.100.50",
+    "timestamp": "2026-05-16T21:42:39.938Z",
+    "operator": "dashboard",
+    "notes": "",
+    "firewall": {
+      "ok": false,
+      "backend": "windows_firewall",
+      "stdout": "The requested operation requires elevation (Run as administrator).\n\r\n",
+      "stderr": "",
+      "rule": "IOMT_BLOCK_192.168.100.50"
+    },
+    "manual": true
+  },
+  {
+    "action": "block",
+    "ip": "192.168.100.50",
+    "timestamp": "2026-05-16T21:42:44.179Z",
+    "operator": "dashboard",
+    "notes": "",
+    "firewall": {
+      "ok": false,
+      "backend": "windows_firewall",
+      "stdout": "The requested operation requires elevation (Run as administrator).\n\r\n",
+      "stderr": "",
+      "rule": "IOMT_BLOCK_192.168.100.50"
+    },
+    "manual": true
+  },
+  {
+    "action": "unblock",
+    "ip": "192.168.100.50",
+    "timestamp": "2026-05-16T23:03:07.120Z",
+    "operator": "dashboard",
+    "notes": "",
+    "existed": true,
+    "firewall": {
+      "ok": false,
+      "backend": "windows_firewall",
+      "stdout": "The requested operation requires elevation (Run as administrator).\n\r\n",
+      "stderr": "",
+      "rule": "IOMT_BLOCK_192.168.100.50"
+    },
+    "marked_false_positive": true
+  }
+]

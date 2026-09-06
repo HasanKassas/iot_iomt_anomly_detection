@@ -1,0 +1,14 @@
+{
+  "autoblock_enabled": false,
+  "telegram_enabled": true,
+  "autoblock_fusion_threshold": 0.95,
+  "alert_fusion_threshold": 0.85,
+  "restrict_to_device_network": false,
+  "settings_version": 52,
+  "last_updated": "2026-05-16T23:00:23.982Z",
+  "alert_threshold": 0.85,
+  "autoblock_threshold": 0.95,
+  "detector_session_id": "979a5f18-f74b-487b-bdfd-cc04dbbfd7c9",
+  "detector_last_updated": "2026-05-16T23:00:10",
+  "clear_history": true
+}

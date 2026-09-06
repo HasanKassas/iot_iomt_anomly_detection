@@ -1,0 +1,20 @@
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  clean_dir: "data/processed/clean"
+  obfuscated_dir: "data/processed/obfuscated"
+  final_dir: "data/processed/final"
+
+  supported_formats:
+    - "pcap"
+    - "pcapng"
+    - "csv"
+    - "parquet"
+
+  random_seed: 42
+
+  # TODO: Dataset-specific paths will be defined later
+  datasets:
+    placeholder:
+      path: ""
+      format: ""

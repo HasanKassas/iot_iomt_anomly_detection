@@ -1,0 +1,8 @@
+{
+  "percentiles": {
+    "p95": 0.1004299595952034,
+    "p99": 0.3184519112110138,
+    "p999": 41.56019973754883
+  },
+  "source": "data\\processed\\final\\baseline_clean_train.csv"
+}

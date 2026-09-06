@@ -1,0 +1,33 @@
+features:
+  packet_features:
+    enabled: true
+    fields:
+      - "packet_size"
+      - "protocol"
+      - "tcp_flags"
+      - "ip_version"
+      - "ttl"
+
+  flow_features:
+    enabled: true
+    fields:
+      - "flow_duration"
+      - "packet_count"
+      - "byte_count"
+      - "avg_packet_size"
+      - "packet_rate"
+      - "byte_rate"
+      - "tcp_flag_distribution"
+
+  obfuscation_features:
+    enabled: true
+    fields:
+      - "size_variance"
+      - "timing_variance"
+      - "fragmentation_ratio"
+      - "header_entropy"
+
+  preprocessing:
+    scaling: "standard"
+    categorical_encoding: "onehot"
+    missing_strategy: "drop"

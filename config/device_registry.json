@@ -1,0 +1,33 @@
+{
+  "192.168.100.10": {
+    "device_name": "ICU Patient Monitor",
+    "department": "ICU",
+    "room": "ICU-03",
+    "criticality": "critical"
+  },
+  "192.168.100.11": {
+    "device_name": "Infusion Pump",
+    "department": "ICU",
+    "room": "ICU-05",
+    "criticality": "high"
+  },
+  "192.168.100.12": {
+    "device_name": "Ventilator",
+    "department": "ICU",
+    "room": "ICU-02",
+    "criticality": "critical"
+  },
+  "192.168.100.13": {
+    "device_name": "ECG Monitor",
+    "department": "Cardiology",
+    "room": "CAR-01",
+    "criticality": "high"
+  },
+  "192.168.100.14": {
+    "device_name": "Nurse Station Gateway",
+    "department": "General",
+    "room": "NS-01",
+    "criticality": "medium"
+  }
+}
+

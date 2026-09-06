@@ -1,0 +1,34 @@
+realtime:
+  api:
+    base_url: "http://localhost:3001"
+    timeout: 2
+    retry_attempts: 3
+
+  monitoring:
+    poll_interval_seconds: 1
+    max_traffic_history: 5000
+    anomaly_threshold: 1
+
+  alerting:
+    severity_levels:
+      critical:
+        threshold: 0.9
+        actions: ["block", "telegram", "log"]
+      high:
+        threshold: 0.7
+        actions: ["telegram", "log"]
+      medium:
+        threshold: 0.5
+        actions: ["log"]
+      low:
+        threshold: 0.0
+        actions: []
+
+    obfuscation_aware:
+      enabled: true
+      obfuscation_bonus: 0.2
+
+  dashboard:
+    fragment_refresh_seconds: 2
+    max_display_traffic: 500
+    max_display_alerts: 200

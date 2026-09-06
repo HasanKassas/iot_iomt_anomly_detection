@@ -1,0 +1,40 @@
+# Dataset Mode Configuration
+# Determines system behavior for dataset integration
+#
+# Supported modes:
+# - "synthetic": Use synthetic data only (current test mode)
+# - "mock": Use mock dataset for schema validation testing
+# - "realistic_simulation": Stress test with realistic noisy data
+# - "real": Use real IoT-23 dataset (future integration)
+
+dataset_mode: "synthetic"
+
+mode_config:
+  synthetic:
+    description: "Synthetic data mode - uses only generated test data"
+    enable_real_pcap: false
+    enable_mock_dataset: false
+    enable_schema_validation: true
+  
+  mock:
+    description: "Mock dataset mode - schema validation testing"
+    enable_real_pcap: false
+    enable_mock_dataset: true
+    enable_schema_validation: true
+  
+  real:
+    description: "Real dataset mode - IoT-23 integration"
+    enable_real_pcap: true
+    enable_mock_dataset: false
+    enable_schema_validation: true
+  
+  realistic_simulation:
+    description: "Realistic simulation mode - stress test with noisy, large-scale data"
+    enable_real_pcap: false
+    enable_mock_dataset: false
+    enable_schema_validation: true
+    inject_realism_noise: true
+    failure_injection_rate: 0.03
+    missing_field_rate: 0.02
+    outlier_rate: 0.01
+    class_imbalance_ratio: 0.05

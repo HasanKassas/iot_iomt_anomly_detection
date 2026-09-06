@@ -1,0 +1,43 @@
+obfuscation:
+  enabled: true
+  random_seed: 42
+
+  techniques:
+    packet_size_randomizer:
+      enabled: true
+      min_variance: 0.1
+      max_variance: 0.5
+      distribution: "normal"
+
+    timing_jitter:
+      enabled: true
+      min_jitter_ms: 1
+      max_jitter_ms: 100
+      distribution: "exponential"
+
+    ip_fragmenter:
+      enabled: true
+      fragmentation_probability: 0.3
+      min_fragments: 2
+      max_fragments: 5
+
+    header_randomizer:
+      enabled: true
+      randomize_ttl: true
+      randomize_tos: true
+      randomize_window: true
+
+  pipeline:
+    order:
+      - "packet_size_randomizer"
+      - "timing_jitter"
+      - "ip_fragmenter"
+      - "header_randomizer"
+
+    severity_levels:
+      low:
+        techniques: ["packet_size_randomizer"]
+      medium:
+        techniques: ["packet_size_randomizer", "timing_jitter"]
+      high:
+        techniques: ["packet_size_randomizer", "timing_jitter", "ip_fragmenter", "header_randomizer"]
